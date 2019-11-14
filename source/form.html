@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-navigation">
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="site-list__item"><a>Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="">HTML ACADEMY</a></li>
+          </ul>
+        </div>
+        <a class="page-heder"><img class="page-heder__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="84" alt="Логотип Седона"></a>
+        <button class="main-navigation__toogle" type="button">Открыть меню</button>
+        <div class="title-image__wrapper">
+          <img class="title-image__image" src="img/sedona.svg" width="281" heigth="214">
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+       <section class="main-title">
+        <h1 class="visually-hidden">Форма обратной связи</h1>
+        <p class="title-text__slogan">Оставьте </p>
+        <p class="title-text__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <form class="page-form" method="post" action="https://echo.htmlacademy.ru">
+          <ul class="page-form__list">
+            <li class="page-form__item">
+              <fieldset>
+                <legend class="fieldset__title">Представьтесь:</legend>
+                <ul>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label user-data__label" for="name">Имя<sup>*</sup></label>
+                    <input class="fieldset__input user-data__input" id="name" placeholder="Петр">
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label user-data__label" for="surname">Фамилия<sup>*</sup></label>
+                    <input class="fieldset__input user-data__input" id="surname" placeholder="Иванов">
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label user-data__label" for="patronymic">Отчество</label>
+                    <input class="fieldset__input user-data__input" id="patronymic" placeholder="Алексеевич">
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="page-form__item">
+              <fieldset>
+                <legend class="fieldset__title">Контактная информация:</legend>
+                <ul>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label user-data__label" for="name">Имя<sup>*</sup></label>
+                    <input class="fieldset__input user-data__input" id="name" placeholder="Петр">
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label user-data__label" for="surname">Фамилия<sup>*</sup></label>
+                    <input class="fieldset__input user-data__input" id="surname" placeholder="Иванов">
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label user-data__label" for="patronymic">Отчество</label>
+                    <input class="fieldset__input user-data__input" id="patronymic" placeholder="Алексеевич">
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="page-form__item">
+              <fieldset>
+                <legend class="fieldset__title">Ваше общее впечатление</legend>
+                <ul>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input checkbox__input" type="checkbox" name="check-positively" id="check-positively">
+                    <label class="fieldset__label checkbox__label" for="check-positively">Скорее положительное</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input checkbox__input" type="checkbox" name="check-negatively" id="check-negatively">
+                    <label class="fieldset__label checkbox__label" for="check-negatively">Скорее положительное</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input checkbox__input" type="checkbox" name="check-normal" id="check-normal">
+                    <label class="fieldset__label checkbox__label" for="check-normal">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+             <li class="page-form__item">
+              <fieldset>
+                <legend class="fieldset-title">Посещенные достопримечательности:</legend>
+                <ul>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input radio__input" type="radio" name="radio-bridge" id="radio-bridge">
+                    <label class="fieldset__label radio__label" for="radio-bridge">Мост Дьявола</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input radio__input" type="radio" name="radio-mountain" id="radio-mountain">
+                    <label class="fieldset__label radio__label" for="radio-mountain">Гора-Колокол</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input radio__input" type="radio" name="radio-park" id="radio-park">
+                    <label class="fieldset__label radio__label" for="radio-park">Слайд-парк</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="fieldset__input radio__input" type="radio" name="radio-rock" id="radio-rock">
+                    <label class="fieldset__label radio__label" for="radio-rock">Красные скалы</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="page-form__item">
+              <fieldset>
+                <legend>Опишите свои эмоции:</legend>
+                <textarea class="fieldset__input textarea__input" placeholder="Опишите подробно все свои восторги"></textarea>
+              </fieldset>
+            </li>
+            <li class="page-form__item">
+              <button class="button page-form__button" type="submit">Отправить отзыв</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Подвал сайта Седона</h2>
+      <div class="shechter__wrapper">
+        <p class="shechter">#visitsedona</p>
+      </div>
+      <ul class="social-links__list">
+        <li class="social-links__item">
+          <a class="social-links__link">
+            <img src="img/icon-twitter-svg.svg" width="18" height="14" alt="twitter">
+            <span class="visually-hidden">Седона в Twitter</span>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link">
+            <img src="img/icon-facebook-svg.svg" width="9" height="18" alt="facebook">
+            <span class="visually-hidden">Седона в Fcebook</span>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link">
+            <img src="img/icon-youtube-svg.scg">
+            <span class="visually-hidden">Седона на Youtube</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
