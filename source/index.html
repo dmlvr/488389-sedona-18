@@ -7,14 +7,13 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a>Главная</a></li>
-            <li class="main-navigation__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-navigation__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-navigation__item"><a href="">HTML ACADEMY</a></li>
-          </ul>
-        </div>
+        <button class="main-navigation__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a>Главная</a></li>
+          <li class="main-navigation__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-navigation__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        </ul>
         <button class="main-navigation__toogle" type="button">Открыть меню</button>
         <a class="main-navigation__logo">
           <img class="main-navigation__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="84" alt="Логотип Седона">
@@ -40,50 +39,36 @@
             </div>
             <img class="advantages__item-image" src="img/photo-city-1-x.jpg" width="320" height="260" alt="Фото города Седона">
             <ul class="advantages__sublist">
-              <li class="advantages__sublist-item">
-                <div class="advantages__sublist-wrapper advantages__sublist-wrapper--icon-hotel">
-                  <p class="advantages__sublist-title">Жилье</p>
-                  <p class="advantages__sublist-text">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-                </div>
+              <li class="advantages__sublist-item advantages__sublist-item--icons-hotel">
+                <p class="advantages__sublist-title">Жилье</p>
+                <p class="advantages__sublist-text">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
               </li>
-              <li class="advantages__sublist-item">
-                <div class="advantages__sublist-wrapper advantages__sublist-wrapper--icon-souvenirs">
-                  <p class="advantages__sublist-title">Сувениры</p>
-                  <p class="advantages__sublist-text">Не только Китайского, но и местного производства</p>
-                </div>
+              <li class="advantages__sublist-item advantages__sublist-item--icons-souvenirs">
+                <p class="advantages__sublist-title">Сувениры</p>
+                <p class="advantages__sublist-text">Не только Китайского, но и местного производства</p>
               </li>
-              <li class="advantages__sublist-item">
-                <div class="advantages__sublist-wrapper advantages__sublist-wrapper--icon-burger">
-                  <p class="advantages__sublist-title">Еда</p>
-                  <p class="advantages__sublist-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь</p>
-                </div>
+              <li class="advantages__sublist-item advantages__sublist-item--icons-eat">
+                <p class="advantages__sublist-title">Еда</p>
+                <p class="advantages__sublist-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper">
-              <p class="advantages__item-slogan">Там есть мост дьявола</p>
-              <p class="advantages__item-text">Да, по нему можно пройти! Если Вы осмелитесь, конечно!</p>
-            </div>
+            <p class="advantages__item-slogan">Там есть мост дьявола</p>
+            <p class="advantages__item-text">Да, по нему можно пройти! Если Вы осмелитесь, конечно!</p>
             <img src="advantages-title" src="img/photo-bridge-1-x.jpg" width="320" height="260" alt="Фото Мост дьявола">
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper">
-              <p class="advantages__item-slogan">Небольшая площадь</p>
-              <p class="advantages__item-text">Все интересные места находятся очень близко</p>
-            </div>
+            <p class="advantages__item-slogan">Небольшая площадь</p>
+            <p class="advantages__item-text">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper">
-              <p class="advantages__item-slogan">Красивая дорога</p>
-              <p class="advantages__item-text">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
-            </div>
+            <p class="advantages__item-slogan">Красивая дорога</p>
+            <p class="advantages__item-text">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper">
-              <p class="advantages__item-slogan">Мало туристов</p>
-              <p class="advantages__item-text">Большинство едет в Гранд Каньон и толпится там.</p>
-            </div>
+            <p class="advantages__item-slogan">Мало туристов</p>
+            <p class="advantages__item-text">Большинство едет в Гранд Каньон и толпится там.</p>
           </li>
         </ul>
       </section>
@@ -121,6 +106,10 @@
           </a>
         </li>
       </ul>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="" width="27" height="34" alt="logo htmlacademy"></a>
+      </div>
     </footer>
   </body>
 </html>

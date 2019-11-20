@@ -7,16 +7,15 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a>Главная</a></li>
-            <li class="main-navigation__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-navigation__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-navigation__item"><a href="">HTML ACADEMY</a></li>
-          </ul>
-        </div>
-        <button class="main-navigation__toogle" type="button">Открыть меню</button>
-        <a class="main-navigation__logo">
+        <button class="main-navigation__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a ркуа="/">Главная</a></li>
+          <li class="main-navigation__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-navigation__item"><a>Форма отзыва</a></li>
+          <li class="main-navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        </ul>
+        <button class="main-navigation__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="main-navigation__logo" href="/">
           <img class="main-navigation__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="84" alt="Логотип Седона">
         </a>
         <div class="page-header__title">
@@ -26,9 +25,8 @@
     </header>
     <main class="page-main">
       <section class="main-title">
-        <h1 class="visually-hidden">Форма обратной связи</h1>
-        <p class="main-title__slogan">Оставьте </p>
-        <p class="main-title__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h1 class="visually-hidden">Оставьте свой отзыв</h1>
+        <p class="main-title__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section>
         <form class="page-form" method="post" action="https://echo.htmlacademy.ru">
@@ -86,8 +84,8 @@
                 </ul>
               </fieldset>
             </li>
-             <li class="page-form__item">
-             <fieldset class="page-form__fieldset">
+            <li class="page-form__item">
+              <fieldset class="page-form__fieldset">
                 <legend class="page-form__fieldset-title">Посещённые достопримечательности:</legend>
                 <ul class="page-form__fieldset-list">
                   <li class="page-form__fieldset-item">
@@ -147,6 +145,10 @@
           </a>
         </li>
       </ul>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href=""><img class="copyright__image" src="https://htmlacademy.ru/intensive/adaptive" width="27" height="34" alt="logo htmlacademy"></a>
+      </div>
     </footer>
   </body>
 </html>

@@ -7,16 +7,15 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a>Главная</a></li>
-            <li class="main-navigation__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-navigation__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-navigation__item"><a href="">HTML ACADEMY</a></li>
-          </ul>
-        </div>
-        <button class="main-navigation__toogle" type="button">Открыть меню</button>
-        <a class="main-navigation__logo">
+        <button class="main-navigation__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a href="/">Главная</a></li>
+          <li class="main-navigation__item"><a>Фото и видео</a></li>
+          <li class="main-navigation__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        </ul>
+        <button class="main-navigation__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="main-navigation__logo" href="/">
           <img class="main-navigation__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="84" alt="Логотип Седона">
         </a>
         <div class="page-header__title">
@@ -33,33 +32,41 @@
         <h2 class="visually-hidden">Фото Седона</h2>
         <ul class="photo__list">
           <li class="photo__item">
-            <img class="photo__image" src="photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+            <a class="photo__link" href="img/photo-1.jpg">
+              <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+            </a>
             <p class="photo__name">Неродные просторы</p>
             <p class="photo__autor">Автор фото: Борис</p>
-            <span class="photo__likes">1350</span>
+            <button type="button" class="photo__likes">1350</button>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+            <a class="photo__link" href="img/photo-2.jpg">
+              <img class="photo__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+            </a>
             <p class="photo__name">Местная растительность</p>
             <p class="photo__autor">Автор фото: Сергей</p>
-            <span class="photo__likes">143</span>
+            <button type="button" class="photo__likes">143</button>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+            <a class="photo__link" href="img/photo-3.jpg">
+              <img class="photo__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+            </a>
             <p class="photo__name">Дорога на север</p>
             <p class="photo__autor">Автор фото: Петр</p>
-            <span class="photo__likes">96</span>
+            <button type="button" class="photo__likes">96</button>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            <a class="photo__link" href="img/photo-4.jpg">
+              <img class="photo__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            </a>
             <p class="photo__name">Мост дьявола</p>
             <p class="photo__autor">Автор фото: Антон</p>
-            <span class="photo__likes">254</span>
+            <button type="button" class="photo__likes">254</button>
           </li>
         </ul>
       </section>
       <section class="video">
-        <h2 class="visually-hidden">Видео Седона</h2>
+        <h2 class="visually-hidden">Видео о городке Седона</h2>
         <p class="video__slogan">Все еще сомневаетесь?</p>
         <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video>
@@ -92,6 +99,10 @@
           </a>
         </li>
       </ul>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="" width="27" height="34" alt="logo htmlacademy"></a>
+      </div>
     </footer>
   </body>
 </html>
