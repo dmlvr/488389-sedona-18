@@ -1,0 +1,121 @@
+.page-header {
+  .center();
+  max-width: @mobile-width;
+}
+
+.main-navigation {
+  position: relative;
+  .flex();
+}
+
+.main-navigation__close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border: none;
+  box-shadow: none;
+}
+
+.main-navigation__close::before,
+.main-navigation__close::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 4px;
+    background-color: @white;
+    top: 7px;
+    left: 0;
+}
+
+.main-navigation__close::before {
+    transform: rotate(45deg);
+}
+
+.main-navigation__close::after {
+    transform: rotate(-45deg);
+}
+
+.main-navigation__list {
+  .list-reset();
+  .flex();
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-navigation__item {
+  width: 100%;
+  .flex();
+  justify-content: center;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+.main-navigation__link {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: @font-bold;
+  font-size: 18px;
+  color: @white;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: @blue;
+}
+
+.main-navigation__link:hover {
+  background-color: @blue-hover;
+  cursor: pointer;
+}
+.main-navigation__link:active {
+  background-color: @blue-active;
+  color: @white-active;
+}
+
+.main-navigation__open {
+  border: none;
+  background-color: rgba(255,255,255,0);
+  position: absolute;
+  bottom: 46px;
+  right: 13px;
+}
+
+.main-navigation__open-image {
+  fill: @blue;
+}
+
+.main-navigation__logo {
+  .center();
+}
+
+.page-header__title {
+  width: @mobile-width;
+  position: relative;
+  .flex();
+  justify-content: center;
+  margin-top: -30px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+.page-header__title::after {
+  content: "";
+  position: absolute;
+  width: @mobile-width;
+  height: 26px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-size: 102%;
+  bottom: -1px;
+  left: 0;
+}
+.page-header__title-image {
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+@media screen and (min-width: @tablet-width) {
+
+}
+
+@media screen and (min-width: @desktop-width) {
+
+}
