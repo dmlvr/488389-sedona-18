@@ -14,10 +14,12 @@
   right: 30px;
   border: none;
   box-shadow: none;
-}
 
-.main-navigation__close::before,
-.main-navigation__close::after {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
     content: "";
     position: absolute;
     width: 29px;
@@ -25,14 +27,19 @@
     background-color: @white;
     top: 7px;
     left: 0;
-}
-
-.main-navigation__close::before {
     transform: rotate(45deg);
-}
+  }
 
-.main-navigation__close::after {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 4px;
+    background-color: @white;
+    top: 7px;
+    left: 0;
     transform: rotate(-45deg);
+  }
 }
 
 .main-navigation__list {
@@ -60,15 +67,15 @@
   padding-top: 17px;
   padding-bottom: 17px;
   background-color: @blue;
-}
 
-.main-navigation__link:hover {
-  background-color: @blue-hover;
-  cursor: pointer;
-}
-.main-navigation__link:active {
-  background-color: @blue-active;
-  color: @white-active;
+  &:hover {
+    background-color: @blue-hover;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: @blue-active;
+    color: @white-active;
+  }
 }
 
 .main-navigation__open {
@@ -77,6 +84,10 @@
   position: absolute;
   bottom: 46px;
   right: 13px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .main-navigation__open-image {
@@ -96,26 +107,28 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   z-index: -1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: @mobile-width;
+    height: 26px;
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-size: 102%;
+    bottom: -1px;
+    left: 0;
+  }
 }
-.page-header__title::after {
-  content: "";
-  position: absolute;
-  width: @mobile-width;
-  height: 26px;
-  background-image: url(../img/bg-intro-triangle-mobile.svg);
-  background-size: 102%;
-  bottom: -1px;
-  left: 0;
-}
+
 .page-header__title-image {
   padding-top: 90px;
   padding-bottom: 85px;
 }
 
-@media screen and (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
 
 }
 
-@media screen and (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
 
 }
