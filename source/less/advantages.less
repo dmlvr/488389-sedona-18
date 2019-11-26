@@ -1,3 +1,53 @@
+.advantages {
+  width: @mobile-width;
+  .center();
+}
+
+.advantages__list {
+  .list-reset();
+}
+
+.advantages__item {
+
+}
+
+.advantages__title-wrapper {
+  // background-color: @blue;
+  position: relative;
+  padding-top: 37px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: @mobile-width;
+    height: 37px;
+    background-image: url(../img/bg-triangle.svg);
+    background-size: 102%;
+    top: -1px;
+    left: 0;
+  }
+}
+
+.advantages__title-slogan {
+  .sedona-title-intro();
+  .sedona-title();
+  color: @white;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.advantages__title-number {
+  .sedona-title-intro();
+  .sedona-intro();
+  color: @white;
+  margin-top: 5px;o
+}
+
+.advantages__title-text {
+  .sedona-title-intro();
+  .sedona-intro();
+  color: @white;
+}
 @media (min-width: @tablet-width) {
 
 }
