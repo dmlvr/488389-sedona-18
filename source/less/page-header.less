@@ -88,10 +88,10 @@
   &:hover {
     cursor: pointer;
   }
-}
 
-.main-navigation__open-image {
-  fill: @blue;
+  &-image {
+    fill: @blue;
+  }
 }
 
 .main-navigation__logo {
@@ -105,8 +105,14 @@
   justify-content: center;
   margin-top: -30px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
+  background-size: 160% auto;
   z-index: -1;
+  background-position: 100% 100%;
+
+  &--index {
+    background-size: 100% auto;
+    background-position: 0% 50%;
+  }
 
   &::after {
     content: "";
@@ -121,8 +127,14 @@
 }
 
 .page-header__title-image {
-  padding-top: 90px;
-  padding-bottom: 85px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
 }
 
 @media (min-width: @tablet-width) {

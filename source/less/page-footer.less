@@ -9,9 +9,10 @@
   margin: 0;
   width: 100%;
   text-align: center;
-}
-.page-footer__shechter-wrapper {
+
+  &-wrapper {
   padding: 35px 0 40px;
+  }
 }
 .social-links {
   .list-reset;
@@ -20,13 +21,13 @@
   width: 155px;
   margin-top: 0;
   justify-content: space-around;
-}
 
-.social-links__item {
-  width: 48px;
-  height: 48px;
-}
-.social-links__link {
+  &__item {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__link {
   .flex;
   justify-content: center;
   align-items: center;
@@ -34,9 +35,29 @@
   height: 100%;
   background-color: @blue;
 
-  &:hover{
-    background-color: @blue-hover;
-    cursor: pointer;
+    &:hover{
+      background-color: @blue-hover;
+      cursor: pointer;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 35px;
+  width: 130px;
+  .center;
+  .flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+
+  &__link {
+    padding-top: 2px;
   }
 }
 
