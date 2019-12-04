@@ -3,14 +3,14 @@
   .center;
   position: relative;
 
-    &::after {
-      content: "";
-      display: block;
-      bottom: 0;
-      width: @mobile-width;
-      height: 1px;
-      background-color: @gray;
-    }
+  &::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    width: @mobile-width;
+    height: 1px;
+    background-color: @gray;
+  }
 
   &__list {
     .list-reset;
@@ -38,7 +38,7 @@
 }
 
 .photo__likes {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   font-size: 14px;
   color: @light-black;
@@ -55,15 +55,8 @@
     width: 23px;
     height: 21px;
     opacity: 0.3;
-    background-image: url(../img/icon-like.svg);
+    background-image: url("../img/icon-like.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
-}
-
-@media (min-width: @tablet-width) {
-
-}
-@media (min-width: @desktop-width) {
-
 }
