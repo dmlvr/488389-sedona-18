@@ -1,12 +1,13 @@
 .page-footer {
   width: @mobile-width;
-  .center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-footer__shechter {
   font-size: 21px;
   text-transform: uppercase;
-  font-family: @font-bold;
+  font-weight: bold;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -18,8 +19,10 @@
 
 .social-links {
   .list-reset;
-  .flex;
-  .center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   width: 155px;
   margin-top: 0;
   justify-content: space-around;
@@ -30,7 +33,7 @@
   }
 
   &__link {
-    .flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -47,8 +50,9 @@
 .copyright {
   margin-top: 35px;
   width: 130px;
-  .center;
-  .flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 

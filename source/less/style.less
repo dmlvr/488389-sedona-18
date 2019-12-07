@@ -1,53 +1,9 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff");
-  src: url("../fonts/ptsans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-}
-
 @import "mixin.less";
 @import "variable.less";
+@import "scaffolding.less";
 @import "outlines.less"; //Временно для подгрузки макета на страницу
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-  font-family: @font-normal;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 @import "page-header.less";
-@import "main-title.less";
+@import "page-main.less";
 @import "advantages.less";
 @import "page-form.less";
 @import "photo.less";
