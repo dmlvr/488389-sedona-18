@@ -1,0 +1,131 @@
+.advantages {
+  width: @mobile-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__list {
+  .list-reset;
+  margin-top: 0;
+}
+
+.advantages__item-wrapper-blue {
+  background-color: @blue;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  &--triangle {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: @mobile-width;
+      height: 37px;
+      background-image: url("../img/bg-triangle.svg");
+      background-size: 102%;
+      top: -1px;
+      left: 0;
+    }
+  }
+}
+
+.advantages__wrapper-gray {
+  background-color: @light-gray;
+  padding-top: 13px;
+  padding-bottom: 27px;
+  position: relative;
+
+  &--first {
+    padding-top: 5px;
+  }
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+    left: 20px;
+  }
+}
+
+.advantages__item-slogan {
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.advantages__item-number {
+  margin-top: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.advantages__item-text {
+  margin-top: 17px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 0;
+}
+
+.advantages__sublist {
+  .list-reset;
+  margin: 0;
+  padding-bottom: 36px;
+  padding-top: 3px;
+}
+
+.advantages__sublist-item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--icons-hotel::before {
+    top: -7px;
+    left: 21px;
+    width: 37px;
+    height: 36px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--icons-souvenirs::before {
+    top: -10px;
+    left: 25px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--icons-burger::before {
+    top: -7px;
+    left: 18px;
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.advantages__sublist-title {
+  margin-top: 29px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.advantages__sublist-text {
+  margin-right: 35px;
+  margin-bottom: 0;
+  text-align: left;
+}

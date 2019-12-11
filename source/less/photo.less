@@ -1,0 +1,64 @@
+.photo {
+  width: @mobile-width;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    width: @mobile-width;
+    height: 1px;
+    background-color: @gray;
+  }
+}
+
+.photo__list {
+  .list-reset;
+  margin-bottom: 0;
+}
+
+.photo__item {
+  margin: 0;
+  margin-top: 23px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo__name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.photo__autor {
+  font-size: 14px;
+  color: @light-black;
+  margin-top: 7px;
+}
+
+.photo__likes {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 14px;
+  color: @light-black;
+  padding-left: 37px;
+  position: relative;
+  margin-bottom: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -2px;
+    width: 23px;
+    height: 21px;
+    opacity: 0.3;
+    background-image: url("../img/icon-like.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}

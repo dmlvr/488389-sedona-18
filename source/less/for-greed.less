@@ -1,0 +1,61 @@
+.for-greed {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: 320px auto;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      background-size: 768px auto;
+    }
+  }
+
+  &--index::before {
+    background: url("../img/layouts/sedona-index-mobile.jpg") no-repeat 50% 0;
+    min-height: 3610px;
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/layouts/sedona-index-tablet.jpg") no-repeat 50% 0;
+      min-height: 2666px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background: url("../img/layouts/sedona-index-desktop.jpg") no-repeat 50% 0;
+      min-height: 2679px;
+    }
+  }
+
+  &--form::before {
+    background: url("../img/layouts/sedona-form-mobile.jpg") no-repeat 50% 0;
+    min-height: 2541px;
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/layouts/sedona-form-tablet.jpg") no-repeat 50% 0;
+      min-height: 2120px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background: url("../img/layouts/sedona-form-desktop.jpg") no-repeat 50% 0;
+      min-height: 1969px;
+    }
+  }
+
+  &--photo::before {
+    background: url("../img/layouts/sedona-photo-mobile.jpg") no-repeat 50% 0;
+    min-height: 3028px;
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/layouts/sedona-photo-tablet.jpg")  no-repeat 50% 0;
+      min-height: 2672px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background: url("../img/layouts/sedona-photo-desktop.jpg")  no-repeat 50% 0;
+      min-height: 2262px;
+    }
+  }
+}
