@@ -2,5 +2,48 @@
   margin-left: auto;
   margin-right: auto;
   width: @mobile-width;
-  min-height: 620px; //добавлено временно пока не заверстаны элементы поиска отеля
+}
+
+.search-hotel__slogan {
+  font-size: 21px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.search-hotel__intro {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 270px;
+  margin-top: 18px;
+  line-height: 1.7;
+}
+
+.search-hotel__button {
+  max-width: 280px;
+  display: block;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  color: @white;
+  background-color: @blue;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: @white-active;
+  }
+}
+
+.search-hotel__map-wrapper {
+  margin-top: 48px;
 }
