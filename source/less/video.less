@@ -20,7 +20,12 @@
   margin-top: 37px;
   min-height: 269px;
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
+}
+
+.video__preview {
+  min-width: 320px;
+  min-height: 201px;
 }
 
 .video__management {
@@ -29,18 +34,147 @@
   bottom: 0;
 }
 
-.video__management-volume {
+.video__management-volume-wrapper {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
   min-height: 46px;
   background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
-.video__management-other {
+.video__button {
+  border: none;
+}
+
+.video__management-icon {
+  color: #454545;
+}
+
+.video__management-volume {
+  margin-left: 55px;
+  margin-right: auto;
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.video__management-volume-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  fill: #ffffff;
+}
+
+.video__management-other-wrapper {
   width: 280px;
   margin-right: auto;
   margin-left: auto;
   background-color: #f2f2f2;
   min-height: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.video__replay {
+  margin-left: 25px;
+}
+
+.video__subtitles {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.video__fullscreen {
+  margin-right: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    width: @tablet-width;
+    padding: 0 60px 0 60px;
+    position: relative;
+  }
+
+  .video__slogan {
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .video__intro {
+    margin-top: 0;
+    max-width: 415px;
+  }
+
+  .video__wrapper {
+    margin-top: 74px;
+    margin-bottom: 40px;
+  }
+
+  .video__management {
+    width: 648px;
+  }
+
+  .video__management-other-wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__management-volume-wrapper {
+    position: absolute;
+    bottom: 11px;
+    left: 80px;
+    background-color: transparent;
+    width: 390px;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  .video__management-volume {
+    margin-left: 90px;
+  }
+
+  .video__management-icon {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: @desktop-width;
+    padding: 0;
+  }
+
+  .video__wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 83px;
+  }
+
+  .video__management {
+    width: 800px;
+    bottom: 4px;
+  }
+
+  .video__management-volume-wrapper {
+    width: 540px;
+  }
 }
