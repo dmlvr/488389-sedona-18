@@ -210,15 +210,27 @@
 
 .page-form__input {
   margin-left: auto;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 21px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 17px;
   background-color: @input-bg;
-  border: none;
+  border: solid 4px @input-bg;
+  font-size: 18px;
+  font-weight: bold;
 
   &::placeholder {
     font-size: 18px;
     font-weight: bold;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: @white;
+    border-color: #e5e5e5;
   }
 
   &--user-data {
@@ -270,6 +282,23 @@
 .page-form__input--impression:checked + .page-form__label-title--impression::before,
 .page-form__input--landmark:checked + .page-form__label-title--landmark::before {
   opacity: 1;
+}
+
+.page-form__input--impression:hover + .page-form__label-title--impression::after,
+.page-form__input--landmark:hover + .page-form__label-title--landmark::after {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.page-form__input--impression:active + .page-form__label-title--impression::after,
+.page-form__input--landmark:active + .page-form__label-title--landmark::after {
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+
+.page-form__input--impression:active + .page-form__label-title--impression::before,
+.page-form__input--landmark:active + .page-form__label-title--landmark::before {
+  opacity: 0.3;
 }
 
 .page-form__input-icon {

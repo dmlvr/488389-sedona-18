@@ -10,6 +10,7 @@
   right: 30px;
   border: none;
   box-shadow: none;
+  display: none;
 
   &:hover {
     cursor: pointer;
@@ -102,10 +103,22 @@
   height: 84px;
 }
 
+.main-navigation__hidden {
+  display: none;
+}
+
+.main-navigation__show {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .main-navigation__close,
   .main-navigation__open {
     display: none;
+  }
+
+  .main-navigation__hidden {
+    display: flex;
   }
 
   .main-navigation__item {
