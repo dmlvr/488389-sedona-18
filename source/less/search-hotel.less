@@ -1,7 +1,7 @@
 .search-hotel {
   margin-left: auto;
   margin-right: auto;
-  width: @mobile-width;
+  width: 100%;
 }
 
 .search-hotel__slogan {
@@ -42,6 +42,11 @@
     background-color: @blue-active;
     color: @white-active;
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: @white;
+  }
 }
 
 .search-hotel__map-wrapper {
@@ -49,10 +54,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .search-hotel {
-    width: @tablet-width;
-  }
-
   .search-hotel__slogan {
     font-size: 30px;
     margin-top: 40px;
@@ -75,10 +76,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .search-hotel {
-    width: @desktop-width;
-  }
-
   .search-hotel__slogan {
     margin-top: 47px;
   }
