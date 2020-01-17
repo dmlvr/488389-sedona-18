@@ -34,8 +34,12 @@
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <a class="main-navigation__logo">
-          <img class="main-navigation__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        <a class="main-navigation__logo" href="/">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="main-navigation__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+          </picture>
         </a>
       </nav>
       <div class="page-header__title">
@@ -50,36 +54,60 @@
       <section class="photo">
         <h2 class="visually-hidden">Фото Седона</h2>
         <ul class="photo__list">
-          <li class="photo__item">
+          <li class="photo__item photo__item--sunset">
             <a class="photo__link" href="img/photo-1.jpg">
-              <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+              </picture>
             </a>
-            <p class="photo__name sedona-intro">Неродные просторы</p>
-            <p class="photo__autor">Автор фото: Борис</p>
-            <button type="button" class="photo__likes">1350</button>
+            <div class="photo__name-autor-wrapper photo__name-autor-wrapper--sunset">
+              <p class="photo__name photo__name--sunset sedona-intro">Неродные просторы</p>
+              <p class="photo__autor">Автор фото: Борис</p>
+            </div>
+            <button type="button" class="photo__likes photo__likes--sunset">1350</button>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--cactus">
             <a class="photo__link" href="img/photo-2.jpg">
-              <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+              </picture>
             </a>
-            <p class="photo__name sedona-intro">Местная растительность</p>
-            <p class="photo__autor">Автор фото: Сергей</p>
+            <div class="photo__name-autor-wrapper">
+              <p class="photo__name sedona-intro">Местная растительность</p>
+              <p class="photo__autor">Автор фото: Сергей</p>
+            </div>
             <button type="button" class="photo__likes">143</button>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--roads">
             <a class="photo__link" href="img/photo-3.jpg">
-              <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+              </picture>
             </a>
-            <p class="photo__name sedona-intro">Дорога на север</p>
-            <p class="photo__autor">Автор фото: Петр</p>
-            <button type="button" class="photo__likes">96</button>
+            <div class="photo__name-autor-wrapper">
+              <p class="photo__name sedona-intro">Дорога на север</p>
+              <p class="photo__autor">Автор фото: Петр</p>
+            </div>
+            <button type="button" class="photo__likes photo__likes--roads">96</button>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--bridge">
             <a class="photo__link" href="img/photo-4.jpg">
-              <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+              </picture>
             </a>
-            <p class="photo__name sedona-intro">Мост дьявола</p>
-            <p class="photo__autor">Автор фото: Антон</p>
+            <div class="photo__name-autor-wrapper">
+              <p class="photo__name sedona-intro">Мост дьявола</p>
+              <p class="photo__autor">Автор фото: Антон</p>
+            </div>
             <button type="button" class="photo__likes">254</button>
           </li>
         </ul>
@@ -89,13 +117,35 @@
         <p class="video__slogan sedona-title">Все еще сомневаетесь?</p>
         <p class="video__intro  sedona-intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__wrapper">
-          <img class="video__preview" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео в SEDONA">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img class="video__preview" src="img/video-mobile@1x.jpg" alt="Видео в SEDONA">
+          </picture>
           <div class="video__management">
-            <div class="video__management-volume">
-              <!--Тут будет управление звуком-->
+            <div class="video__management-volume-wrapper">
+              <button class="video__management-volume video__button">
+                <svg class="video__management-volume-icon">
+                  <circle r="5px" cx="50%" cy="50%"></circle>
+                </svg>
+              </button>
             </div>
-            <div class="video__management-other">
-              <!--Тут будет остальное управление-->
+            <div class="video__management-other-wrapper">
+              <button class="video__replay video__button">
+                <svg class="video__management-icon" width="16" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                </svg>
+              </button>
+              <button class="video__subtitles video__button">
+                <svg class="video__management-icon" width="32" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                </svg>
+              </button>
+              <button class="video__fullscreen video__button">
+                <svg class="video__management-icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>

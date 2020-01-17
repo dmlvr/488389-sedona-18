@@ -34,8 +34,12 @@
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <a class="main-navigation__logo">
-          <img class="main-navigation__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        <a class="main-navigation__logo" href="/">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="main-navigation__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+          </picture>
         </a>
       </nav>
       <div class="page-header__title">
@@ -50,16 +54,16 @@
       <form class="page-form" method="post" action="https://echo.htmlacademy.ru">
         <ul class="page-form__list">
           <li class="page-form__item page-form__item--user-data">
-            <fieldset class="page-form__fieldset">
+            <fieldset class="page-form__fieldset page-form__fieldset--user-data">
               <legend class="page-form__fieldset-title page-form__fieldset-title--user-data sedona-title">Представьтесь:</legend>
-              <ul class="page-form__fieldset-list">
+              <ul class="page-form__fieldset-list page-form__fieldset-list--user-data">
                 <li class="page-form__fieldset-item
                 page-form__fieldset-item--user-data">
-                  <label class="page-form__label page-form__label--user-data sedona-intro" for="name">Имя:<sup>*</sup></label>
+                  <label class="page-form__label page-form__label--user-data sedona-intro" for="name">Имя*:</label>
                   <input class="page-form__input page-form__input--user-data-first" id="name" name="user-name" placeholder="Петр">
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--user-data">
-                  <label class="page-form__label page-form__label--user-data sedona-intro" for="surname">Фамилия:<sup>*</sup></label>
+                  <label class="page-form__label page-form__label--user-data sedona-intro" for="surname">Фамилия*:</label>
                   <input class="page-form__input page-form__input--user-data" placeholder="Иванов" name="user-surname">
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--user-data">
@@ -72,43 +76,47 @@
           <li class="page-form__item page-form__item--contact-unfo">
             <fieldset class="page-form__fieldset">
               <legend class="page-form__fieldset-title page-form__fieldset-title--contact-info sedona-title">Контактная информация:</legend>
-              <ul class="page-form__fieldset-list">
+              <ul class="page-form__fieldset-list page-form__fieldset-list--contact-info">
                 <li class="page-form__fieldset-item page-form__fieldset-item--contact-info">
                   <label class="page-form__label page-form__label--contact-info" for="user-phone">
-                    <span class="page-form__label-title sedona-intro">Контактный телефон*:</span>
+                    <span class="page-form__label-title page-form__label-title--contact-info sedona-intro"><span class="page-form__label-desktop-dn">Контактный </span>телефон*:</span>
                     <input class="page-form__input page-form__input--contact-info" id="user-phone" name="user-phone" placeholder="Введите телефон">
-                    <svg class="page-form__input-icon"></svg>
+                    <svg class="page-form__input-icon">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--contact-info">
                   <label class="page-form__label page-form__label--contact-info" for="user-email">
-                    <span class="page-form__label-title sedona-intro">Электронная почта*:</span>
+                    <span class="page-form__label-title page-form__label-title--contact-info sedona-intro">Электронная почта*:</span>
                     <input class="page-form__input page-form__input--contact-info" id="user-email" name="user-email" placeholder="Введите e-mail">
-                    <svg class="page-form__input-icon"></svg>
+                    <svg class="page-form__input-icon page-form__input-icon--mail">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </li>
           <li class="page-form__item page-form__item--impression">
-            <fieldset class="page-form__fieldset page-form__fieldset">
+            <fieldset class="page-form__fieldset page-form__fieldset--impression">
               <legend class="page-form__fieldset-title page-form__fieldset-title--impression sedona-title">Ваше общее впечатление:</legend>
-              <ul class="page-form__fieldset-list">
+              <ul class="page-form__fieldset-list page-form__fieldset-list--impression">
                 <li class="page-form__fieldset-item page-form__fieldset-item--impression">
                   <label class="page-form__label page-form__label--impression" for="check-positively">
-                    <input class="page-form__input page-form__input--impression" type="checkbox" name="check-impression" id="check-positively">
+                    <input class="page-form__input page-form__input--impression" type="radio" name="check-impression" id="check-positively">
                     <span class="page-form__label-title page-form__label-title--impression">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--impression">
                   <label class="page-form__label page-form__label--impression" for="check-negatively">
-                    <input class="page-form__input page-form__input--impression" type="checkbox" name="check-impression" id="check-negatively">
+                    <input class="page-form__input page-form__input--impression" type="radio" name="check-impression" id="check-negatively">
                     <span class="page-form__label-title page-form__label-title--impression">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--impression">
                   <label class="page-form__label page-form__label--impression" for="check-normal">
-                    <input class="page-form__input page-form__input--impression" type="checkbox" name="check-impression" id="check-normal">
+                    <input class="page-form__input page-form__input--impression" type="radio" name="check-impression" id="check-normal">
                     <span class="page-form__label-title page-form__label-title--impression">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -118,28 +126,28 @@
           <li class="page-form__item page-form__item--landmark">
             <fieldset class="page-form__fieldset">
               <legend class="page-form__fieldset-title page-form__fieldset-title--landmark sedona-title">Посещённые достопримечательности:</legend>
-              <ul class="page-form__fieldset-list">
+              <ul class="page-form__fieldset-list page-form__fieldset-list--landmark">
                 <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                   <label class="page-form__label page-form__label--landmark" for="radio-bridge">
-                    <input class="page-form__input page-form__input--landmark" type="radio" name="radio-bridge" id="radio-bridge">
+                    <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-bridge" id="radio-bridge">
                     <span class="page-form__label-title page-form__label-title--landmark">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                   <label class="page-form__label page-form__label--landmark" for="radio-mountain">
-                    <input class="page-form__input page-form__input--landmark" type="radio" name="radio-mountain" id="radio-mountain">
+                    <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-mountain" id="radio-mountain">
                     <span class="page-form__label-title page-form__label-title--landmark">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                   <label class="page-form__label page-form__label--landmark" for="radio-park">
-                    <input class="page-form__input page-form__input--landmark" type="radio" name="radio-park" id="radio-park">
+                    <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-park" id="radio-park">
                     <span class="page-form__label-title page-form__label-title--landmark">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                   <label class="page-form__label page-form__label--landmark" for="radio-rock">
-                    <input class="page-form__input page-form__input--landmark" type="radio" name="radio-rock" id="radio-rock">
+                    <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-rock" id="radio-rock">
                     <span class="page-form__label-title page-form__label-title--landmark">Красные скалы</span>
                   </label>
                 </li>
@@ -151,7 +159,10 @@
               <legend class="page-form__fieldset-title page-form__fieldset-title--emotion sedona-title">Опишите свои эмоции:</legend>
               <textarea class="page-form__input page-form__input--emotion" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
+          </li>
+          <li class="page-form__item page-form__item--form-button">
             <button class="page-form__button" type="submit">Отправить отзыв</button>
+            <p class="page-form__button-text">* — обязательные поля</p>
           </li>
         </ul>
       </form>
