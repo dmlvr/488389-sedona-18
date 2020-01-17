@@ -1,5 +1,5 @@
 .page-main__title {
-  width: @mobile-width;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
@@ -102,10 +102,15 @@
 
 @media (min-width: @desktop-width) {
   .page-main__title {
-    width: 440px;
+    &--form {
+      width: 440px;
+    }
   }
 
   .page-main__slogan {
+
+    &--form {
     margin-top: 113px;
+    }
   }
 }
