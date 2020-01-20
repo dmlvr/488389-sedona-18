@@ -12,6 +12,10 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
 
+  @media (min-resolution: @retina) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   &--index {
     background-size: cover;
     background-position: 50% 50%;
@@ -49,6 +53,10 @@
     min-height: 290px;
     background-position: 50% 100%;
 
+    @media (min-resolution: @retina) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
     &::after {
       width: 770px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -72,6 +80,11 @@
 
 @media (min-width: @desktop-width) {
   .page-header__title {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
     &::after {
       width: 1201px;
       background-image: url("../img/bg-intro-triangle-desktop.svg");
