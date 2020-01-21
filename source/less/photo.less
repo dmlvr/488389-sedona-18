@@ -29,6 +29,11 @@
 
 .photo__link {
   display: flex;
+  width: 280px;
+}
+
+.photo__image {
+  width: 280px;
 }
 
 .photo__name {
@@ -104,6 +109,22 @@
     }
   }
 
+  .photo__link {
+    width: 324px;
+
+    &--sunset {
+      width: 648px;
+    }
+  }
+
+  .photo__image {
+    width: 324px;
+
+    &--sunset {
+      width: 648px;
+    }
+  }
+
   .photo__name-autor-wrapper {
     margin-left: 21px;
   }
@@ -160,6 +181,9 @@
     position: relative;
     z-index: 1;
 
+    &--sunset {
+      width: 1200px;
+    }
 
     &::before {
       content: "";
@@ -170,6 +194,14 @@
       width: 100%;
       height: 80px;
       z-index: 2;
+    }
+  }
+
+  .photo__image {
+    width: 400px;
+
+    &--sunset {
+      width: 1200px;
     }
   }
 
