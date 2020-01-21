@@ -26,7 +26,8 @@ gulp.task("copy", function () {
     "source/js/**",
     "source/*.ico",
     "source/css/*.css",
-    "source/*html" // дополнительно копирую файл normalize
+    "source/*.html", // дополнительно копирую файл normalize
+    "source/*.webp"
     ], {
     base: "source"
     })
@@ -53,7 +54,7 @@ gulp.task("sprite", function () {
 gulp.task("webp", function(){
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp())
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("images", function() {
