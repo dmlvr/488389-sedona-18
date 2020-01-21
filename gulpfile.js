@@ -27,7 +27,7 @@ gulp.task("copy", function () {
     "source/*.ico",
     "source/css/*.css",
     "source/*.html", // дополнительно копирую файл normalize
-    "source/*.webp"
+    "source/img/*.webp"
     ], {
     base: "source"
     })
