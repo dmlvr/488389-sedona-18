@@ -95,6 +95,19 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("serverDev", function () {
+  server.init({
+    server: "source/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/*.html").on("change", server.reload);
+});
+
 gulp.task("build", gulp.series(
   "clean",
   "css",
