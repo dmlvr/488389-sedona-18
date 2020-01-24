@@ -70,15 +70,13 @@ gulp.task("images", function() {
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
-    .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -95,6 +93,19 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("build", gulp.series(
+  "clean",
+  "css",
+  "copy",
+  "images",
+  "sprite"
+));
+
+gulp.task("start", gulp.series(
+  "css",
+  "server"
+));
+
 gulp.task("serverDev", function () {
   server.init({
     server: "source/",
@@ -104,18 +115,24 @@ gulp.task("serverDev", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("cssDev"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series(
-  "clean",
-  "css",
-  "copy",
-  "images",
-  "sprite"
-  ));
+gulp.task("cssDev", function () {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
+});
 
-gulp.task("start", gulp.series(
-  "css",
-  "server"));
+gulp.task("startDev", gulp.series(
+  "cssDev",
+  "serverDev"
+));
