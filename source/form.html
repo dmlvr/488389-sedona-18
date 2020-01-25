@@ -72,11 +72,11 @@
                   <li class="page-form__fieldset-item
                   page-form__fieldset-item--user-data">
                     <label class="page-form__label page-form__label--user-data sedona-intro" for="name">Имя*:</label>
-                    <input class="page-form__input page-form__input--user-data-first" id="name" name="user-name" placeholder="Петр">
+                    <input class="page-form__input page-form__input--user-data-first" id="name" name="user-name" placeholder="Петр" required>
                   </li>
                   <li class="page-form__fieldset-item page-form__fieldset-item--user-data">
                     <label class="page-form__label page-form__label--user-data sedona-intro" for="surname">Фамилия*:</label>
-                    <input class="page-form__input page-form__input--user-data" id="surname" placeholder="Иванов" name="user-surname">
+                    <input class="page-form__input page-form__input--user-data" id="surname" placeholder="Иванов" name="user-surname" required>
                   </li>
                   <li class="page-form__fieldset-item page-form__fieldset-item--user-data">
                     <label class="page-form__label page-form__label--user-data sedona-intro" for="patronymic">Отчество:</label>
@@ -92,7 +92,7 @@
                   <li class="page-form__fieldset-item page-form__fieldset-item--contact-info">
                     <label class="page-form__label page-form__label--contact-info" for="user-phone">
                       <span class="page-form__label-title page-form__label-title--contact-info sedona-intro"><span class="page-form__label-desktop-dn">Контактный </span>телефон*:</span>
-                      <input class="page-form__input page-form__input--contact-info" id="user-phone" name="user-phone" placeholder="Введите телефон">
+                      <input class="page-form__input page-form__input--contact-info" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
                       <svg class="page-form__input-icon">
                         <use xlink:href="img/sprite.svg#icon-phone"></use>
                       </svg>
@@ -101,7 +101,7 @@
                   <li class="page-form__fieldset-item page-form__fieldset-item--contact-info">
                     <label class="page-form__label page-form__label--contact-info" for="user-email">
                       <span class="page-form__label-title page-form__label-title--contact-info sedona-intro">Электронная почта*:</span>
-                      <input class="page-form__input page-form__input--contact-info" id="user-email" name="user-email" placeholder="Введите e-mail">
+                      <input class="page-form__input page-form__input--contact-info" id="user-email" name="user-email" placeholder="Введите e-mail" required>
                       <svg class="page-form__input-icon page-form__input-icon--mail">
                         <use xlink:href="img/sprite.svg#icon-mail"></use>
                       </svg>
@@ -116,7 +116,7 @@
                 <ul class="page-form__fieldset-list page-form__fieldset-list--impression">
                   <li class="page-form__fieldset-item page-form__fieldset-item--impression">
                     <label class="page-form__label page-form__label--impression" for="check-positively">
-                      <input class="page-form__input page-form__input--impression" type="radio" name="check-impression" id="check-positively">
+                      <input class="page-form__input page-form__input--impression" type="radio" name="check-impression" id="check-positively" checked>
                       <span class="page-form__label-title page-form__label-title--impression">Скорее положительное</span>
                     </label>
                   </li>
@@ -141,19 +141,19 @@
                 <ul class="page-form__fieldset-list page-form__fieldset-list--landmark">
                   <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                     <label class="page-form__label page-form__label--landmark" for="radio-bridge">
-                      <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-bridge" id="radio-bridge">
+                      <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-bridge" id="radio-bridge" checked>
                       <span class="page-form__label-title page-form__label-title--landmark">Мост Дьявола</span>
                     </label>
                   </li>
                   <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                     <label class="page-form__label page-form__label--landmark" for="radio-mountain">
-                      <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-mountain" id="radio-mountain">
+                      <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-mountain" id="radio-mountain" checked>
                       <span class="page-form__label-title page-form__label-title--landmark">Гора-Колокол</span>
                     </label>
                   </li>
                   <li class="page-form__fieldset-item page-form__fieldset-item--landmark">
                     <label class="page-form__label page-form__label--landmark" for="radio-park">
-                      <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-park" id="radio-park">
+                      <input class="page-form__input page-form__input--landmark" type="checkbox" name="radio-park" id="radio-park" checked>
                       <span class="page-form__label-title page-form__label-title--landmark">Слайд-парк</span>
                     </label>
                   </li>

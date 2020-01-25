@@ -920,22 +920,27 @@ body {
 .page-form__input::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: bold;
+  opacity: 1;
 }
 .page-form__input::-moz-placeholder {
   font-size: 18px;
   font-weight: bold;
+  opacity: 1;
 }
 .page-form__input:-ms-input-placeholder {
   font-size: 18px;
   font-weight: bold;
+  opacity: 1;
 }
 .page-form__input::-ms-input-placeholder {
   font-size: 18px;
   font-weight: bold;
+  opacity: 1;
 }
 .page-form__input::placeholder {
   font-size: 18px;
   font-weight: bold;
+  opacity: 1;
 }
 .page-form__input:hover {
   background-color: #e5e5e5;
@@ -1034,10 +1039,11 @@ body {
   background-color: #81b3d2;
   font-size: 21px;
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
   padding: 17px 0;
   border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 .page-form__button:hover {
   background-color: #669ec0;
