@@ -8,7 +8,7 @@
     <circle cx="46.083" cy="10.083" r="2"/>
   </g>
 </symbol><symbol id="icon-cross" viewBox="0 0 22.199 22.199">
-  <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+  <polygon fill="currentColor" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 </symbol><symbol id="icon-facebook" viewBox="0 0 8.672 18.944">
   <path fill="currentColor" d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
 </symbol><symbol id="icon-gift" viewBox="0 0 63 75.084">
@@ -52,9 +52,9 @@
   <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
 </symbol><symbol id="icon-menu" viewBox="0 0 22.928 21.982">
   <g fill="currentColor">
-    <rect width="22.928" height="3.964"/>
-    <rect y="9.009" width="22.928" height="3.964"/>
-    <rect y="18.018" width="22.928" height="3.964"/>
+    <rect fill="currentColor" width="22.928" height="3.964"/>
+    <rect fill="currentColor" y="9.009" width="22.928" height="3.964"/>
+    <rect fill="currentColor" y="18.018" width="22.928" height="3.964"/>
   </g>
 </symbol><symbol id="icon-phone" viewBox="0 0 18 18">
   <g id="Page-1">

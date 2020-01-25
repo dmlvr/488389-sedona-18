@@ -198,41 +198,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.main-navigation__close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: none;
-  background-color: transparent;
-}
-.main-navigation__close:hover {
-  cursor: pointer;
-}
-.main-navigation__close::before {
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 4px;
-  background-color: #ffffff;
-  top: 7px;
-  left: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.main-navigation__close::after {
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 4px;
-  background-color: #ffffff;
-  top: 7px;
-  left: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
 .main-navigation__list {
   padding: 0;
   margin: 0;
@@ -274,18 +239,29 @@ body {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-.main-navigation__open {
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
+.main-navigation__management {
   position: absolute;
-  bottom: 46px;
+  top: 15px;
   right: 13px;
 }
-.main-navigation__open:hover {
+.main-navigation__management:hover {
   cursor: pointer;
+}
+.main-navigation__button {
+  border: none;
+  background-color: transparent;
+}
+.main-navigation__button--open {
+  display: none;
+}
+.main-navigation__button--close {
+  display: none;
 }
 .main-navigation__open-image {
   color: #81b3d2;
+}
+.main-navigation__close-image {
+  color: #ffffff;
 }
 .main-navigation__logo {
   margin-left: auto;
@@ -449,7 +425,7 @@ body {
     width: 440px;
   }
   .page-main__slogan--form {
-    margin-top: 113px;
+    margin-top: 105px;
   }
   .page-main__slogan--photo {
     margin-top: 106px;
@@ -736,6 +712,8 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 .page-form__list {
   padding: 0;
@@ -775,21 +753,22 @@ body {
   letter-spacing: 0.5px;
 }
 .page-form__fieldset-title--contact-info {
-  margin-top: 18px;
   letter-spacing: 0.2px;
   margin-bottom: 6px;
+  padding-top: 16px;
 }
 .page-form__fieldset-title--impression {
   letter-spacing: 0.3px;
   margin-bottom: 8px;
-  margin-top: 19px;
+  padding-top: 19px;
 }
 .page-form__fieldset-title--emotion {
-  margin-top: 19px;
+  padding-top: 19px;
   margin-bottom: 11px;
 }
 .page-form__fieldset-title--landmark {
   margin-bottom: 5px;
+  padding-top: 21px;
 }
 .page-form__fieldset-list {
   padding: 0;
@@ -814,6 +793,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 21px;
 }
 .page-form__fieldset-item--contact-info {
   margin-top: 15px;
@@ -1118,7 +1098,7 @@ body {
   }
   .page-form__item--form-button {
     margin-top: 60px;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1131,7 +1111,7 @@ body {
   }
   .page-form__fieldset-title {
     width: 100%;
-    position: relative;
+    text-align: left;
   }
   .page-form__fieldset-title::before,
   .page-form__fieldset-title::after {
@@ -1149,8 +1129,11 @@ body {
   .page-form__fieldset-title::before {
     right: 0;
   }
+  .page-form__fieldset-title--user-data {
+    padding-top: 20px;
+  }
   .page-form__fieldset-title--contact-info {
-    margin-top: 42px;
+    padding-top: 38px;
     margin-bottom: 0;
     text-align: center;
   }
@@ -1167,13 +1150,23 @@ body {
   }
   .page-form__fieldset-title--landmark {
     padding: 0 125px;
-    margin-top: 26px;
+    padding-top: 26px;
     line-height: 1.3;
     margin-bottom: 38px;
+    text-align: center;
+  }
+  .page-form__fieldset-title--landmark::before,
+  .page-form__fieldset-title--landmark::after {
+    top: 52px;
   }
   .page-form__fieldset-title--emotion {
-    margin-top: 26px;
-    margin-bottom: 53px;
+    padding-top: 26px;
+    margin-bottom: 57px;
+    text-align: center;
+  }
+  .page-form__fieldset-title--emotion::before,
+  .page-form__fieldset-title--emotion::after {
+    top: 42px;
   }
   .page-form__fieldset-list {
     margin: 0;
@@ -1209,11 +1202,24 @@ body {
     margin-top: 0;
     margin-bottom: 42px;
   }
+  .page-form__label-title--landmark {
+    margin-top: 5px;
+  }
   .page-form__input--contact-info {
     width: 590px;
   }
   .page-form__input--emotion {
     width: 100%;
+    padding-top: 13px;
+    padding-left: 16px;
+  }
+  .page-form__input--user-data {
+    margin-left: 15px;
+    width: 182px;
+  }
+  .page-form__input--user-data-first {
+    margin-left: 15px;
+    width: 215px;
   }
   .page-form__button {
     margin: 0;
@@ -1245,7 +1251,7 @@ body {
   }
   .page-form__fieldset-title--landmark {
     padding: 0 280px;
-    margin-top: 25px;
+    padding-top: 25px;
   }
   .page-form__fieldset-list--contact-info {
     display: -webkit-box;
@@ -1531,7 +1537,7 @@ body {
   margin-top: 37px;
   min-height: 269px;
   position: relative;
-  margin-bottom: 39px;
+  margin-bottom: 43px;
 }
 .video__preview {
   min-width: 320px;
@@ -1609,14 +1615,14 @@ body {
           align-items: center;
 }
 .video__replay {
-  margin-left: 25px;
+  margin-left: 19px;
 }
 .video__subtitles {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 19px;
 }
 .video__fullscreen {
-  margin-right: 23px;
+  margin-right: 17px;
 }
 @media (min-width: 768px) {
   .video {
@@ -1635,7 +1641,7 @@ body {
   }
   .video__wrapper {
     margin-top: 74px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
   .video__management {
     width: 648px;
@@ -1643,20 +1649,21 @@ body {
   .video__management-other-wrapper {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    height: 92px;
   }
   .video__management-volume-wrapper {
     position: absolute;
-    bottom: 11px;
+    bottom: 22px;
     left: 80px;
     background-color: transparent;
     width: 390px;
   }
   .video__management-volume-wrapper::before {
     width: 100%;
-    left: 0;
+    left: 13px;
   }
   .video__management-volume {
-    margin-left: 90px;
+    margin-left: 126px;
   }
   .video__management-icon {
     color: #ffffff;
@@ -1667,6 +1674,15 @@ body {
   }
   .video__management-icon:active {
     opacity: 0.3;
+  }
+  .video__fullscreen {
+    margin-right: 35px;
+  }
+  .video__subtitles {
+    margin-right: 19px;
+  }
+  .video__replay {
+    margin-left: 27px;
   }
 }
 @media (min-width: 1200px) {
